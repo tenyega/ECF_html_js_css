@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    --ihm_btn: #ec327d;
+    --fontcolor: #67676778;
+    --headings: #974806;
+    --green: #7A960E;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    background-image: url(../img/noise.png);
+    cursor: pointer;
+}
+
+
+/********************************************header */
+
+header.heading {
+    display: flex;
+    padding: 5px;
+    background-color: #ec327d;
+    justify-content: space-between;
+}
+
+header.heading div.gauche {
+    display: inline-flex;
+}
+
+header.heading div.gauche h1.title,
+header.heading div.droite h1 {
+    padding: 10px;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+header.heading div.gauche img {
+    width: 50px;
+    height: 50px;
+}
+
+div.mybloc {
+    display: flex;
+}
+
+
+/*******************************************************admin Header****/
+
+div.adminHeader .h1Admin {
+    font-size: 3em;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 5px;
+    margin: 5px;
+}
+
+div.adminHeader .h2Admin {
+    font-size: 2em;
+    font-variant: small-caps;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    position: absolute;
+    padding: 20px;
+    margin: 5px;
+    top: 34%;
+    background-color: #9747067e;
+    left: 39%;
+    transform: translateY(-50%);
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 50%);
+}
+
+p label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+input[type='button'] {
+    background-color: var(--ihm_btn);
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    width: 137px;
+    text-align: center;
+    font-size: 15px;
+    padding: 18px;
+    border-radius: 15px;
+    border: 3px dashed blue;
+}
+
+#etiquette {
+    position: absolute;
+    padding: 5px;
+    top: 32%;
+    left: 73%;
+    background-color: #ccc;
+    font-size: 2em;
+    color: #800;
+    z-index: 10;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.448);
+    border-radius: 2px;
+    display: none;
+}

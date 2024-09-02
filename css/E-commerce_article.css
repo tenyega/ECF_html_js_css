@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    --ihm_btn: #ec327d;
+    --fontcolor: #67676778;
+    --headings: #974806;
+    --green: #7A960E;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    background-image: url(../img/noise.png);
+    cursor: pointer;
+}
+
+
+/********************************************header */
+
+header.heading {
+    display: flex;
+    padding: 5px;
+    background-color: #ec327d;
+    justify-content: space-between;
+}
+
+header.heading div.gauche {
+    display: inline-flex;
+}
+
+header.heading div.gauche h1.title,
+header.heading div.droite h1 {
+    padding: 10px;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 10px;
+    text-decoration: underline;
+    font-size: 3em;
+}
+
+header.heading div.gauche img {
+    width: 50px;
+    height: 50px;
+}
+
+div.mybloc {
+    display: flex;
+}
+
+
+/********************************************** Article Image  and title*/
+
+div.container .mytitle {
+    font-size: 3em;
+    font-weight: bold;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    text-align: center;
+    display: block;
+    margin-top: 30px;
+}
+
+div.container .image img {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+div.colorAndBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/************************************** color choice*/
+
+div.choixColeur {
+    padding: 33px;
+    text-align: center;
+    border: 1px #000 solid;
+    border-radius: 50px;
+    display: flex;
+    width: 317px;
+    margin: 0px 14px;
+}
+
+div.choixColeur div.divCircle {
+    display: block;
+    margin-top: 2px;
+}
+
+div.choixColeur div.divCircle span.circle1 {
+    border: 18px rgb(207, 228, 21) solid;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+div.choixColeur div.divCircle span.circle2 {
+    border: 18px rgb(238, 21, 21) solid;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+div.choixColeur div.divCircle span.circle3 {
+    border: 18px rgb(15, 221, 12) solid;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+div.choixColeur div.divCircle span.circle4 {
+    border: 18px rgb(19, 12, 221) solid;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+/********************************************btn*/
+
+input.ihm_btn {
+    background-color: var(--ihm_btn);
+    color: black;
+    width: 180px;
+    text-align: center;
+    font-size: 15px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px dashed blue;
+}
+
+
+/*************************************************details*/
+
+div.details {
+    display: block;
+    padding: 10px;
+    margin: auto;
+}
+
+div.details h1.boxHeader {
+    font-size: 3em;
+}
+
+div.details div.box1 {
+    width: 35%;
+    padding: 5px;
+}
+
+div.details div.box1 .pDescription,
+div.details div.box2 .prix,
+div.details div.box3 .taille {
+    font-size: 2em;
+    padding: 5px;
+}
+
+div.details div.box2 {
+    width: 35%;
+}
+
+div.details div.box3 {
+    width: 35%;
+}
